@@ -36,11 +36,12 @@ https://wiki.mozilla.org/DevTools/Hacking#Running_DevTools_Tests
 ```
 
 ## TRY Server
-First get Mozilla Git Tools:
+First get Mozilla Git Tools (+ add this directory to your $PATH in your .bash_profile):
 ```
 git clone git@github.com:mozilla/moz-git-tools.git
 ```
-Make sure the scripts in this repository are executable - add this directory to your $PATH in your .bash_profile.  Make sure your Mercurial repository (fx-team) is up to date.  
+Modify moz-git-tools/git-push-to-try:42 to include your email ssh://example@gmail.com@hg.mozilla.org/try  
+Make sure your Mercurial repository (fx-team) is up to date.  
 Make sure that your Git repository (gecko-dev) is in sync with it, with the addition of your patch.  
 Next, navigate to your gecko-dev directory and push to try with a command like this:
 ```
