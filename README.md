@@ -29,6 +29,12 @@ git commit -m "Bug 12345 - Summary of the bug. r=<name of reviewer>"
 git hgp HEAD > Bug12345.patch`
 ```
 
+## Running Tests
+https://wiki.mozilla.org/DevTools/Hacking#Running_DevTools_Tests
+```
+./mach mochitest devtools/client/path/to/the/test_you_want_to_run.js
+```
+
 ## TRY Server
 First get Mozilla Git Tools:
 ```
