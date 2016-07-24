@@ -1,6 +1,7 @@
 # Mozilla Contributing Cheat Sheet
 
 https://developer.mozilla.org/en-US/docs/Tools/Contributing
+
 https://developer.mozilla.org/en-US/docs/Tools/Contributing/Contribute_on_nightly
 
 ## Getting Source Code 
@@ -20,7 +21,7 @@ git checkout fx-team
 [alias]
 	hgp = "show --binary --find-renames --format=\"# HG changeset patch%n# User %an <%ae>%n%B\" -U8"
 ```
-*Then use:* 
+Then use:
 ```
 git checkout master
 git checkout -b bug12345
@@ -28,7 +29,7 @@ git commit -m "Bug 12345 - Summary of the bug. r=<name of reviewer>"
 git hgp HEAD > Bug12345.patch`
 ```
 
-TRY Server
+## TRY Server
 First get Mozilla Git Tools:
 ```
 git clone git@github.com:mozilla/moz-git-tools.git
