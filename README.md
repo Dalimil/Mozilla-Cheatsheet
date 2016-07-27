@@ -52,5 +52,5 @@ Make sure your Mercurial repository (fx-team) is up to date.
 Make sure that your Git repository (gecko-dev) is in sync with it, with the addition of your patch.  
 Next, navigate to your gecko-dev directory and push to try with a command like this:
 ```
-git-push-to-try ../fx-team -b do -p linux,linux64,macosx64,win32 -u xpcshell,mochitests -t none
+git-push-to-try ../fx-team -b do -p linux64,macosx64,win32 -u xpcshell,mochitests -t none
 ```
