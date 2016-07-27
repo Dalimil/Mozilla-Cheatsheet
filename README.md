@@ -13,7 +13,7 @@ git pull
 git checkout fx-team
 ```
 
-## Gitconfig
+## Gitconfig & Git flow
 ```
 [user]
     name = My Name
@@ -27,6 +27,13 @@ git checkout master
 git checkout -b bug12345
 git commit -m "Bug 12345 - Summary of the bug. r=<name of reviewer>"
 git hgp HEAD > Bug12345.patch`
+```
+
+## Coding Standards - ESLint
+https://wiki.mozilla.org/DevTools/CodingStandards
+```
+./mach eslint --setup # Run this only once
+./mach eslint path/to/directory/or/file
 ```
 
 ## Running Tests
