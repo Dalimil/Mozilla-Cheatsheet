@@ -6,9 +6,12 @@ https://developer.mozilla.org/en-US/docs/Tools/Contributing
 https://developer.mozilla.org/en-US/docs/Tools/Contributing/Contribute_on_nightly
 
 ## Getting Source Code 
-**Only clone the tip of master (mozilla-central) and fx-team (fx-team) branches**
+**Only clone the tip of master (mozilla-central) branch (+ optionally also fx-team branch)**
 ```
 git clone -b master --single-branch --depth 1 https://github.com/mozilla/gecko-dev.git
+
+# Optional (if you need fx-team):
+cd gecko-dev
 git remote set-branches --add origin fx-team
 git pull
 git checkout fx-team
