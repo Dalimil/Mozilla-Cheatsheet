@@ -1,7 +1,8 @@
-# Mozilla Contributing Cheat Sheet
+# Mozilla DevTools - Contributors Cheat Sheet
 
-https://developer.mozilla.org/en-US/docs/Tools/Contributing
+This is a collection of links and useful code snippets that serve as a reference for people contributing to Mozilla Firefox DevTools.
 
+https://developer.mozilla.org/en-US/docs/Tools/Contributing  
 https://developer.mozilla.org/en-US/docs/Tools/Contributing/Contribute_on_nightly
 
 ## Getting Source Code 
@@ -25,7 +26,7 @@ Then use:
 ```
 git checkout master
 git checkout -b bug12345
-git commit -m "Bug 12345 - Summary of the bug. r=<name of reviewer>"
+git commit -m "Bug 12345 - Summary of the bug. r=<reviewer-nickname>"
 git hgp HEAD > Bug12345.patch`
 ```
 
