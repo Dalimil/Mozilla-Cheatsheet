@@ -52,17 +52,17 @@ First get Mozilla Git Tools (+ add this directory to your $PATH in your .bash_pr
 git clone git@github.com:mozilla/moz-git-tools.git
 ```
 Modify moz-git-tools/git-push-to-try:42 to include your email ssh://example@gmail.com@hg.mozilla.org/try  
-Make sure your Mercurial repository (fx-team) is cloned and is up to date.
+Make sure your Mercurial repository (mozilla-master) is cloned and is up to date.
 ```sh
-hg clone http://hg.mozilla.org/integration/fx-team
+hg clone https://hg.mozilla.org/mozilla-central/
 
 # Later just update:
 hg pull
 hg update
 ```
-Make sure that your Git repository (gecko-dev) is in sync with it, with the addition of your patch - e.g. your bug branch is rebased on origin/master and thus only has one additional commit when compared to fx-team -> your bug fix commit.  
+Make sure that your Git repository (gecko-dev) is in sync with it, with the addition of your patch - e.g. your bug branch is rebased on origin/master and thus only has one additional commit when compared to mozilla-central -> your bug fix commit.  
 
 Next, navigate to your gecko-dev directory and push to try with a command like this:
 ```
-git-push-to-try ../fx-team -b do -p linux64,macosx64,win32 -u xpcshell,mochitests -t none
+git-push-to-try ../mozilla-central -b do -p linux64,macosx64,win32 -u xpcshell,mochitests -t none
 ```
